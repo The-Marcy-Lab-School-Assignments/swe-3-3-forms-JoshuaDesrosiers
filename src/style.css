@@ -14,10 +14,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+fieldset{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  justify-items: start;
+
+}
+input:
 /* TODO: Add your styles here */
