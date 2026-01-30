@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
     <h1>NYC Tech Summit 2026</h1>
     <p>March 15 2026 | 9:00 am - 5:00 pm | Manhattan Conference Center</p>
-    </div>
-    <form>
-        
-        <h2>Event RSVP</h2>
-        <section>
-        <p>First Name</p>
-        <p>Last Name</p>
-        <input type="text">
-        <input type="text">
-        <p>Email</p>
-        <p>Number of Tickets</p>
-        <input type="text">
-        <input type="text">
-        </section>
-        <fieldset>
-            <legend>Lunch Preference</legend>
-            <input value="Chicken" type="radio">
-            <label for="Chicken">Chicken</label>
-            <input value="Fish" type="radio">
-            <label for="Fish">Fish</label>
-            <input value="Vegetarian" type="radio">
-            <label for="Vegetarian">Vegetarian</label>
-        </fieldset>
-        <fieldset>
-            <legend>Select Workshop Sessions (select all that apply)</legend>
-            <input value="Session 1" type="checkbox">
-            <label for="Session 1">Session 1</label>
-            <input value="Session 2" type="checkbox">
-            <label for="Session 2">Session 2</label>
-            <input value="Session 3" type="checkbox">
-            <label for="Session 3">Session 3</label>
-            <input value="Session 4" type="checkbox">
-            <label for="Session 4">Session 4</label>
-            <input value="Session 5" type="checkbox">
-            <label for="Session 5">Session 5</label>
-        </fieldset>
-        <p>Special Requests or Notes</p>
-        <textarea placeholder="Dietary restrictions, accesibility needs, questions, etc"></textarea>
-        <input type="submit">
-    </form>
-    <script src="index.js"></script>
-  </body>
+  </header>
+  <form>
+
+    <h2>Event RSVP</h2>
+    <section>
+      <label for="FN">First Name</label>
+      <label for="LN">Last Name</label>
+      <input id="FN" type="text" name="first-name">
+      <input id="LN" type="text" name="last-name">
+      <label for="email">Email</label>
+      <label for="tickets">Number of Tickets</label>
+      <input id="email" type="email" name="email">
+      <input id='tickets' type="number" min="0" max="10" name="ticket-count">
+    </section>
+    <fieldset>
+      <legend>Lunch Preference</legend>
+      <input id="Chicken" type="radio" name="chicken">
+      <label for="Chicken">Chicken</label>
+      <input id="Fish" type="radio" name="fish">
+      <label for="Fish">Fish</label>
+      <input id="Vegetarian" type="radio" name="Vegetarian">
+      <label for="Vegetarian">Vegetarian</label>
+    </fieldset>
+    <fieldset>
+      <legend>Select Workshop Sessions (select all that apply)</legend>
+      <input id="Session 1" type="checkbox" name="Session 1">
+      <label for="Session 1">Session 1</label>
+      <input id="Session 2" type="checkbox" name="Session 2">
+      <label for="Session 2">Session 2</label>
+      <input id="Session 3" type="checkbox" name="Session 3">
+      <label for="Session 3">Session 3</label>
+      <input id="Session 4" type="checkbox" name="Session 4">
+      <label for="Session 4">Session 4</label>
+      <input id="Session 5" type="checkbox" name="Session 5">
+      <label for="Session 5">Session 5</label>
+    </fieldset>
+    <p>Special Requests or Notes</p>
+    <textarea placeholder="Dietary restrictions, accessibility needs, questions, etc" name="notes"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <footer>Copyright @ 2026 NYC Tech Summit</footer>
+</body>
+
 </html>
