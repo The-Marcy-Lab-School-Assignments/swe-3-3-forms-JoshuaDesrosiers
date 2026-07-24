@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML 5 Boilerplate</title>
+  <title>NYC Tech Summit 2026 - RSVP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,46 +14,50 @@
     <h1>NYC Tech Summit 2026</h1>
     <p>March 15 2026 | 9:00 am - 5:00 pm | Manhattan Conference Center</p>
   </header>
-  <form>
+  <main>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
 
-    <h2>Event RSVP</h2>
-    <section>
-      <label for="FN">First Name</label>
-      <label for="LN">Last Name</label>
-      <input id="FN" type="text" name="first-name">
-      <input id="LN" type="text" name="last-name">
-      <label for="email">Email</label>
-      <label for="tickets">Number of Tickets</label>
-      <input id="email" type="email" name="email">
-      <input id='tickets' type="number" min="0" max="10" name="ticket-count">
-    </section>
-    <fieldset>
-      <legend>Lunch Preference</legend>
-      <input id="Chicken" type="radio" name="chicken">
-      <label for="Chicken">Chicken</label>
-      <input id="Fish" type="radio" name="fish">
-      <label for="Fish">Fish</label>
-      <input id="Vegetarian" type="radio" name="Vegetarian">
-      <label for="Vegetarian">Vegetarian</label>
-    </fieldset>
-    <fieldset>
-      <legend>Select Workshop Sessions (select all that apply)</legend>
-      <input id="Session 1" type="checkbox" name="Session 1">
-      <label for="Session 1">Session 1</label>
-      <input id="Session 2" type="checkbox" name="Session 2">
-      <label for="Session 2">Session 2</label>
-      <input id="Session 3" type="checkbox" name="Session 3">
-      <label for="Session 3">Session 3</label>
-      <input id="Session 4" type="checkbox" name="Session 4">
-      <label for="Session 4">Session 4</label>
-      <input id="Session 5" type="checkbox" name="Session 5">
-      <label for="Session 5">Session 5</label>
-    </fieldset>
-    <p>Special Requests or Notes</p>
-    <textarea placeholder="Dietary restrictions, accessibility needs, questions, etc" name="notes"></textarea>
-    <button type="submit">Submit</button>
-  </form>
-  <footer>Copyright @ 2026 NYC Tech Summit</footer>
+      <h2>Event RSVP</h2>
+      <section>
+        <label for="FN">First Name</label>
+        <label for="LN">Last Name</label>
+        <input id="FN" type="text" name="first-name" required>
+        <input id="LN" type="text" name="last-name" required>
+        <label for="email">Email</label>
+        <label for="tickets">Number of Tickets</label>
+        <input id="email" type="email" name="email" required>
+        <input id='tickets' type="number" min="0" max="10" name="ticket-count" value="1">
+      </section>
+      <fieldset>
+        <legend>Lunch Preference</legend>
+        <input id="Chicken" type="radio" name="lunch" value="chicken">
+        <label for="Chicken">Chicken</label>
+        <input id="Fish" type="radio" name="lunch" value="fish">
+        <label for="Fish">Fish</label>
+        <input id="Vegetarian" type="radio" name="lunch" value="vegetarian">
+        <label for="Vegetarian">Vegetarian</label>
+      </fieldset>
+      <fieldset>
+        <legend>Select Workshop Sessions (select all that apply)</legend>
+        <input id="session1" type="checkbox" name="sessions" value="Session 1">
+        <label for="session1">Session 1</label>
+        <input id="session2" type="checkbox" name="sessions" value="Session 2">
+        <label for="session2">Session 2</label>
+        <input id="session3" type="checkbox" name="sessions" value="Session 3">
+        <label for="session3">Session 3</label>
+        <input id="session4" type="checkbox" name="sessions" value="Session 4">
+        <label for="session4">Session 4</label>
+        <input id="session5" type="checkbox" name="sessions" value="Session 5">
+        <label for="session5">Session 5</label>
+      </fieldset>
+      <div class="field-group">
+        <label for="notes">Special Requests or Notes</label>
+        <textarea id="notes" placeholder="Dietary restrictions, accessibility needs, questions, etc" name="notes"></textarea>
+      </div>
+      <button type="submit">Complete RSVP</button>
+    </form>
+  </main>
+  <footer>Copyright &copy; 2026 NYC Tech Summit</footer>
 </body>
 
 </html>
